@@ -1,0 +1,85 @@
+/* * {
+    box-sizing: border-box;
+} */
+
+.header {
+    background-color: darkturquoise;
+    height: 40px;
+}
+
+.navigation {
+    height: 40px;
+}
+
+.nav-list {
+    margin-top: -16px;
+}
+
+.nav-item {
+    margin-right: 16px;
+    /* float: left;
+            width: 30%; */
+    display: inline;
+    /* margin-right: 16px; */
+    position: relative;
+    line-height: 40px;
+    color: white;
+    left: 16px;
+    float: left;
+}
+
+.content {
+    height: 500px;
+    background-color: beige;
+}
+
+.head {
+    background-color: aquamarine;
+    height: 200px;
+    width: 200px;
+    /* margin: auto; */
+    position: relative;
+    top: calc(50% - 100px);
+    left: calc(50% - 100px);
+}
+
+.ear_right {
+    background-color: brown;
+    height: 60px;
+    width: 40px;
+    position: relative;
+    /* float: right; */
+    top: -60px;
+    right: 40px;
+}
+
+.ear_left {
+    background-color: brown;
+    height: 60px;
+    width: 40px;
+    position: relative;
+    /* float: right; */
+    top: -120px;
+    left: 200px;
+}
+
+.eye_right {
+    background-color: gray;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    position: relative;
+    top: -20px;
+    left: 40px;
+}
+
+.eye_left {
+    background-color: gray;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    position: relative;
+    float: right;
+    top: -50px;
+    right: 40px;
+}
