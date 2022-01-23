@@ -32,7 +32,7 @@
 }
 
 .content {
-    height: 500px;
+    height: 5000px;
     background-color: beige;
     position: relative;
 }
@@ -43,7 +43,7 @@
     width: 200px;
     /* margin: auto; */
     position: relative;
-    top: calc(50% - 100px);
+    top: calc(50% - 2350px);
     left: calc(50% - 100px);
 }
 
