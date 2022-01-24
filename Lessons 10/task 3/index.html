@@ -5,44 +5,116 @@
     <meta charset="UTF-8" />
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
-    <!-- <link rel="stylesheet" href="style.css" /> -->
-    <style>
+    <link rel="stylesheet" href="style.css" />
+    <!-- <style>
+        * {
+            box-sizing: border-box;
+        }
+        
         .header {
             height: 40px;
             background-color: yellow;
+            display: flex;
+            align-items: center;
         }
         
         .footer {
             height: 40px;
             background-color: green;
+            display: flex;
         }
-    </style>
+        
+        .navigation {
+            margin: 0;
+            display: flex;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .item {
+            margin-right: 16px;
+        }
+        
+        .text {
+            margin: auto;
+        }
+        
+        .first {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        
+        .useg {
+            flex-grow: 1;
+            display: flex;
+        }
+        
+        .board {
+            display: flex;
+            flex-grow: 1;
+            background-color: pink;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .style {
+            height: 40px;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            /* margin-right: 16px;
+        }
+        
+        .day {
+            height: 40px;
+            padding-left: 16px;
+        }
+        
+        .today {
+            width: 200px;
+            background-color: gray;
+        }
+        
+        .news {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            padding: 16px;
+            justify-content: 16px;
+        }
+    </style> */ -->
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li>About</li>
-                <li>Products</li>
-                <li>Contacts</li>
+    <div class="first">
+        <header class="header">
+            <nav>
+                <ul class="navigation">
+                    <li class="item">About</li>
+                    <li class="item">Products</li>
+                    <li class="item">Contacts</li>
+                </ul>
+            </nav>
+        </header>
+        <main class="useg">
+            <section class="board">
+                <h2>I can use Flexbox!!!</h2>
+            </section>
+            <aside class="today">
+                <h2 class="news">News</h2>
+
+                <ul class="style">
+                    <li class="day">News 1</li>
+                    <li class="day">News 2</li>
+                    <li class="day">News 3</li>
+            </aside>
             </ul>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h2>I can use Flexbox!!!</h2>
-        </section>
-        <aside>
-            <h2>News</h2>
-        </aside>
-        <ul>
-            <li>News 1</li>
-            <li>News 2</li>
-            <li>News 3</li>
-        </ul>
-    </main>
-    <footer><span>Footer</span></footer>
+        </main>
+        <footer class="footer"><span class="text">Footer</span></footer>
+    </div>
 </body>
 
 </html>
