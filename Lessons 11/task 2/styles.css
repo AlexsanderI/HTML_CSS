@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+}
+
+
+/* .articles {
+            display: flex;
+        } */
+
+div {
+    display: flex;
+    /* height: 100px;
+            width: 150px;
+            background-color: red;
+            margin: 16px; */
+}
+
+.visible-text {
+    height: 100px;
+    width: 150px;
+    background-color: beige;
+    margin: 16px;
+}
+
+.cropped {
+    height: 100px;
+    width: 150px;
+    background-color: beige;
+    margin: 16px;
+    overflow: hidden;
+}
+
+.both-scrolls {
+    height: 100px;
+    width: 150px;
+    background-color: beige;
+    margin: 16px;
+    overflow: scroll;
+    cursor: all-scroll;
+}
+
+.vertical-scroll {
+    height: 100px;
+    width: 150px;
+    background-color: beige;
+    margin: 16px;
+    overflow: auto;
+    cursor: all-scroll;
+}
