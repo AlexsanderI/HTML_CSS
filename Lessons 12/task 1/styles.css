@@ -1,20 +1,36 @@
-div>div {
-    width: 100px;
-    height: 100px;
-    background: coral;
+html {
+    font-family: Roboto, sans-serif;
+    font-size: 18px;
 }
 
-.container>div:nth-child(1) {
-    display: none;
-    /* background: yellow; */
+section {
+    margin: 32px;
 }
 
-.container>div:nth-child(2) {
-    visibility: hidden;
-    /* background: coral; */
+h1 {
+    word-spacing: 20px;
+    text-align: center;
+    /* letter-spacing: 5px; */
+    text-transform: uppercase;
 }
 
-.container>div:nth-child(3) {
-    visibility: visible;
-    /* background-color: aqua; */
+p {
+    line-height: 28px;
+}
+
+.tehnology {
+    font-weight: 900;
+    letter-spacing: 3px;
+    font-size: 24px;
+    text-decoration: underline;
+    text-decoration: ulowercase;
+    opacity: 80%;
+}
+
+.tarnslation {
+    color: grey;
+}
+
+a {
+    text-decoration: none;
 }

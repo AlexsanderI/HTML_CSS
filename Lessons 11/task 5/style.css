@@ -1,22 +1,16 @@
-* {
-    box-sizing: border-box;
-}
-
-header {
+.gallery {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    cursor: all-scroll;
+    overflow-y: auto;
+    flex-wrap: nowrap;
 }
 
-.article {
+.thumb {
     margin: 8px;
-    padding: 16px;
-    background-color: bisque;
-    flex-basis: 300px;
-    flex-grow: 1;
-    flex-shrink: 0;
 }
 
-.articles-list {
-    display: flex;
-    flex-wrap: wrap;
+::-webkit-scrollbar {
+    width: 0;
 }
