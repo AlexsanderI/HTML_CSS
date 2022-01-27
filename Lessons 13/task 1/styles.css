@@ -1,20 +1,18 @@
-div>div {
-    width: 100px;
-    height: 100px;
-    background: coral;
+* {
+    box-sizing: border-box;
 }
 
-.container>div:nth-child(1) {
-    display: none;
-    /* background: yellow; */
-}
-
-.container>div:nth-child(2) {
-    visibility: hidden;
-    /* background: coral; */
-}
-
-.container>div:nth-child(3) {
-    visibility: visible;
-    /* background-color: aqua; */
+.mountains {
+    height: 500px;
+    width: 300px;
+    background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+13/task1/nature.jpeg);
+    font-size: 32px;
+    font-family: Roboto, sans-serif;
+    color: #fff;
+    font-weight: 700;
+    padding: 32px;
+    text-align: center;
+    /* box-sizing: border-box; */
+    background-position: center;
+    background-size: cover;
 }

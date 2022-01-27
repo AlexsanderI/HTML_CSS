@@ -1,20 +1,14 @@
-div>div {
-    width: 100px;
-    height: 100px;
-    background: coral;
+html {
+    font-size: 18px;
 }
 
-.container>div:nth-child(1) {
-    display: none;
-    /* background: yellow; */
+.properties-list__item {
+    padding: 8px;
 }
 
-.container>div:nth-child(2) {
-    visibility: hidden;
-    /* background: coral; */
-}
-
-.container>div:nth-child(3) {
-    visibility: visible;
-    /* background-color: aqua; */
+.properties-list {
+    color: #f39;
+    font-size: 24px;
+    list-style-type: none;
+    line-height: 32px;
 }
