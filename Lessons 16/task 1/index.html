@@ -7,35 +7,42 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
     <link rel="stylesheet" href="styles.css" />
     <!-- <style>
-        div>div {
-            width: 100px;
-            height: 100px;
-            background: coral;
-        }
-        
-        .container>div:nth-child(1) {
-            display: none;
-            /* background: yellow; */
-        }
-        
-        .container>div:nth-child(2) {
-            visibility: hidden;
-            /* background: coral; */
-        }
-        
-        .container>div:nth-child(3) {
-            visibility: visible;
-            /* background-color: aqua; */
+        .form-control,
+        .choose-gender {
+            margin: 16px;
         }
     </style> -->
 </head>
 
 <body>
-    <div class="container">
-        <div>Not Displayed</div>
-        <div>Hiddnen</div>
-        <div>Visible</div>
-    </div>
+    <form>
+        <div class="form-control">
+            <input type="text" name="lastName" value="Emerson" />
+        </div>
+        <div class="form-control">
+            <input type="number" value="17" name="age" />
+        </div>
+        <div class="form-control">
+            <input type="checkbox" name="agree" />
+            <label for="agree">Accept terms and conditions</label>
+        </div>
+        <div class="choose-gender">
+            <input type="radio" name="gender" checked />
+            <label for="geender">Male</label>
+
+            <input type="radio" name="gender" />
+            <label for="geender">Female</label>
+
+            <input type="radio" name="gender" />
+            <label for="geender">Secret</label>
+        </div>
+        <div class="form-control">
+            <textarea name="description" placeholder="Write description..."></textarea>
+        </div>
+        <div class="form-control">
+            <button type="submit">Submit</button>
+        </div>
+    </form>
 </body>
 
 </html>
