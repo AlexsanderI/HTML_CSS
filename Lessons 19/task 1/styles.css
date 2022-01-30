@@ -1,20 +1,44 @@
-div>div {
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 32px;
+}
+
+.rect {
     width: 100px;
     height: 100px;
-    background: coral;
+    background-color: coral;
+    margin-bottom: 16px;
+    transition-property: width, opacity;
+    opacity: 0.5;
+    text-align: center;
+    line-height: 100px;
+    transition-duration: 2s, 0.5s;
 }
 
-.container>div:nth-child(1) {
-    display: none;
-    /* background: yellow; */
+.rect:hover {
+    width: 100%;
+    opacity: 1;
 }
 
-.container>div:nth-child(2) {
-    visibility: hidden;
-    /* background: coral; */
+.rect:nth-child(1) {
+    transition-timing-function: linear;
 }
 
-.container>div:nth-child(3) {
-    visibility: visible;
-    /* background-color: aqua; */
+.rect:nth-child(2) {
+    transition-timing-function: ease;
+}
+
+.rect:nth-child(3) {
+    transition-timing-function: ease-in;
+}
+
+.rect:nth-child(4) {
+    transition-timing-function: ease-out;
+}
+
+.rect:nth-child(5) {
+    transition-timing-function: ease-in-out;
 }

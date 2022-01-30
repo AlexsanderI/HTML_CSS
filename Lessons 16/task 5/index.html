@@ -3,51 +3,114 @@
 
 <head>
     <meta charset="UTF-8" />
-    <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        form {
+            margin: 32px;
+        }
+        
+        div {
+            margin: 8px;
+        }
+    </style>
 </head>
 
 <body>
-    <header>
-        <h1>Articles</h1>
-    </header>
-    <main class="articles-list">
-        <article class="article">
-            <h2>Flexbox решает!</h2>
-            <p>
-                Долгое время единственными надёжными инструментами CSS верстки были такие способы как Float (обтекание) и позиционирование . С их помощью сложно или невозможно достичь следующих простых требований к макету : Вертикального выравнивания блока внутри родителя.
-                Оформления всех детей контейнера так, чтобы они распределили между собой доступную ширину/высоту, независимо от того, сколько ширины/высоты доступно. Сделать все колонки в макете одинаковой высоты, даже если наполнение в них различно.
-            </p>
-        </article>
-        <article class="article">
-            <h2>Значения по умолчанию</h2>
-            <p>
-                Значения по умолчанию, заданные для flex элементов (дочерние элементы flex контейнера), настроены для решения основных задач.
-            </p>
-        </article>
-        <article class="article">
-            <h2>Flexbox оси!</h2>
-            <p>
-                В Flexbox есть свойство под названием flex-direction, которое определяет направление главной оси (в каком направлении располагаются flexbox дети) — по умолчанию ему присваивается значение row, т.е. располагать дочерние элементы в ряд слева направо (для
-                большинства языков) или справа налево (для арабских языков).
-            </p>
-        </article>
-        <article class="article">
-            <h2>Перенос строк</h2>
-            <p>
-                Проблема может быть в том, что, если у вас фиксированная ширина или высота макета, ваши flexbox элементы переполнят контейнер и нарушат макет.
-            </p>
-        </article>
-        <article class="article">
-            <h2>flex: краткий код против развёрнутогоРаздел</h2>
-            <p>
-                flex это сокращённое свойство, в которым можно задать до трёх разных свойств: Значение пропорции может быть установлено отдельно с помощью свойства flex-grow. Следующее значение пропорции — flex-shrink — вступает в роль, когда flex элементы переполняют
-                контейнер. Оно указывает, сколько забирается от размера каждого flex элемента, чтобы он перестал переполнять контейнер. Значение минимального размера, как мы обсуждали ранее. Оно может быть установлено отдельно с помощью свойства flex-basis.
-                Мы не советуем использовать развёрнутые свойства flex, если вам в действительности это не нужно (например, переопределить ранее установленное). Они приводят к написанию большого количества дополнительного кода и могут запутать кого угодно.
-            </p>
-        </article>
-    </main>
+    <form>
+        <div>
+            <input type="text" name="primaryLanguage" value="HTML" disabled />
+        </div>
+
+        <div>
+            <input type="checkbox" name="agree" unchecked />
+        </div>
+
+        <div>
+            <input type="checkbox" name="like" checked />
+        </div>
+
+        <div>
+            <input type="color" name="favouriteColor" value="#ff7f50" />
+        </div>
+
+        <div>
+            <input type="date" name="birthDate" value="2021-01-02" />
+        </div>
+
+        <div>
+            <input type="datetime-local" name="birthTime" value="2024-10-04T13:02" />
+        </div>
+
+        <div>
+            <input type="email" name="email" placeholder="example@domain.com" required />
+        </div>
+
+        <div>
+            <input type="file" name="avatar" />
+        </div>
+
+        <div>
+            <input type="month" name="startLearning" value="2020-01" />
+        </div>
+
+        <div>
+            <input type="number" name="favouriteNumber" value="17" />
+        </div>
+
+        <div>
+            <textarea name="story" rows="5" cols="30" placeholder="A long time ago..."></textarea>
+        </div>
+
+        <div>
+            <input type="password" name="password" value="secret" />
+        </div>
+
+        <div class="languages">
+            <input type="radio" name="language" id="html" />
+            <label for="html">HTML</label>
+
+            <input type="radio" name="language" id="css" checked />
+            <label for="css">CSS</label>
+
+            <input type="radio" name="language" id="javascript" />
+            <label for="javascript">JavaScript</label>
+        </div>
+
+        <div>
+            <input type="range" name="learningProgress" value="30" />
+        </div>
+
+        <div>
+            <select name="framework" form="frameform">
+          <option value="jquery">jQuery</option>
+          <option value="react">React</option>
+          <option value="bootstrap">Bootstrap</option>
+        </select>
+        </div>
+
+        <div>
+            <input type="search" name="search" placeholder="Type first letters..." />
+        </div>
+        <div>
+            <input type="time" name="lunchEnd" value="14:01" />
+        </div>
+        <div>
+            <input type="url" name="website" placeholder="https://website.com" />
+        </div>
+        <div>
+            <input type="week" name="birthWeek" value="2021-W51" />
+        </div>
+        <div>
+            <button type="submit">Save</button>
+        </div>
+    </form>
 </body>
 
 </html>

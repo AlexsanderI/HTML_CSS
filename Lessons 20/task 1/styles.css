@@ -1,20 +1,18 @@
-div>div {
+* {
+    box-sizing: border-box;
+}
+
+.square {
     width: 100px;
     height: 100px;
-    background: coral;
+    background-color: tomato;
+    transform: translate(200px, 100px) rotate(45deg) scale(1.5);
 }
 
-.container>div:nth-child(1) {
-    display: none;
-    /* background: yellow; */
-}
-
-.container>div:nth-child(2) {
-    visibility: hidden;
-    /* background: coral; */
-}
-
-.container>div:nth-child(3) {
-    visibility: visible;
-    /* background-color: aqua; */
+p {
+    margin: 0 32px;
+    padding: 8px;
+    background-color: antiquewhite;
+    display: inline-block;
+    border-radius: 4px;
 }
