@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" integrity="sha256-WAgYcAck1C1/zEl5sBl5cfyhxtLgKGdpI3oKyJffVRI=" crossorigin="anonymous" />
     <link rel="stylesheet" href="styles.css" />
     <style>
-            * {
+        * {
             box-sizing: border-box;
         }
         
@@ -16,21 +16,21 @@
             background-color: #ff7f50;
             min-height: 200px;
             display: flex;
-            flex-grow: 1;
+            /* flex-grow: 1; */
         }
         
         .products-list {
             background-color: #006400;
             min-height: 200px;
             display: flex;
-            flex-grow: 1;
+            /* flex-grow: 1; */
         }
         
         .news {
             background-color: #0ff;
             min-height: 200px;
             display: flex;
-            flex-grow: 1;
+            /* flex-grow: 1; */
         }
         
         span {
@@ -46,10 +46,13 @@
         @media screen and (min-width: 600px) {
             .products {
                 display: flex;
-                flex-wrap: wrap;
+                width: 100%;
+                flex-shrink: 0.5;
             }
             .part {
-                min-width: 50%;
+                display: flex;
+                width: 100%;
+                flex-shrink: 1;
             }
         }
         
@@ -59,8 +62,9 @@
                 flex-direction: row;
             }
             .part {
-                flex-basis: 0;
+                min-width: calc(100% / 3);
             }
+        }
     </style>
 </head>
 
