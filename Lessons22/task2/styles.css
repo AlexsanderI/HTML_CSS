@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+}
+
+.navigation {
+    background-color: #ff7f50;
+    min-height: 200px;
+    display: flex;
+    /* flex-grow: 1; */
+}
+
+.products-list {
+    background-color: #006400;
+    min-height: 200px;
+    display: flex;
+    /* flex-grow: 1; */
+}
+
+.news {
+    background-color: #0ff;
+    min-height: 200px;
+    display: flex;
+    /* flex-grow: 1; */
+}
+
+span {
+    background-color: #faebd7;
+    padding: 4px;
+    font-family: 'Verdana';
+    text-transform: lowercase;
+    border-radius: 4px;
+    margin: auto;
+    padding: 8px;
+}
+
+@media screen and (min-width: 600px) {
+    .products {
+        display: flex;
+        width: 100%;
+        flex-shrink: 0.5;
+    }
+    .part {
+        display: flex;
+        width: 100%;
+        flex-shrink: 1;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .content {
+        display: flex;
+        flex-direction: row;
+    }
+    .part {
+        min-width: calc(100% / 3);
+    }
+}
