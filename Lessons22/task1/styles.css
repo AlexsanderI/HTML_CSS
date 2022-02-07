@@ -1,20 +1,29 @@
-div>div {
+* {
+    box-sizing: border-box;
+}
+
+.square {
     width: 100px;
     height: 100px;
-    background: coral;
+    margin: 8px;
+    background-color: #8a2be2;
 }
 
-.container>div:nth-child(1) {
-    display: none;
-    /* background: yellow; */
+.container {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
 }
 
-.container>div:nth-child(2) {
-    visibility: hidden;
-    /* background: coral; */
+@media screen and (max-width: 600px) {
+    .square {
+        background-color: #ff7f50;
+    }
 }
 
-.container>div:nth-child(3) {
-    visibility: visible;
-    /* background-color: aqua; */
+@media screen and (orientation: portrait) {
+    .container {
+        flex-direction: column;
+    }
 }
