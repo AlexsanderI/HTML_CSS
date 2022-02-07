@@ -5,13 +5,13 @@ img {
 }
 
 @media screen and (min-width: 400px) {
-    .small {
+    .big {
         display: block;
     }
 }
 
 @media screen and (max-width: 400px) {
-    .big {
+    .small {
         display: block;
     }
 }
