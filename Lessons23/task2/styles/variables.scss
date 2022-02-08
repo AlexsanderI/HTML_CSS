@@ -1,0 +1,27 @@
+$sm: 600px;
+$md: 900px;
+$lg: 1199px;
+$suplg: 1200;
+@mixin for-extra-small {
+    @media screen and (max-width: 599px) {
+        @content;
+    }
+}
+
+@mixin for-medium-up {
+    @media screen and (min-width: 600px) and (max-width: 899px) {
+        @content;
+    }
+}
+
+@mixin for-large-up {
+    @media screen and (min-width: 900px) and (max-width: 1199px) {
+        @content;
+    }
+}
+
+@mixin for-large-more {
+    @media screen and (min-width: $lg) {
+        @content;
+    }
+}
