@@ -16,6 +16,7 @@ body {
 }
 @media screen and (max-width: 599px) {
   .square {
+    margin: 16px;
     background-color: #ff7f50;
   }
 }

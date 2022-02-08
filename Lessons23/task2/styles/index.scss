@@ -16,7 +16,7 @@ body {
     height: 100px;
     margin: 8px;
     @include for-extra-small {
-        // display: flex;
+        margin: 16px;
         background-color: #ff7f50;
         // flex-direction: row;
     }
