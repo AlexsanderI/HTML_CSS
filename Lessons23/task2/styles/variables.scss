@@ -3,7 +3,7 @@ $md: 900px;
 $lg: 1199px;
 $suplg: 1200;
 @mixin for-extra {
-    @media screen and (max-width: 589px) {
+    @media screen and (max-width: 513px) {
         @content;
     }
 }
@@ -15,7 +15,7 @@ $suplg: 1200;
 }
 
 @mixin for-medium {
-    @media screen and (min-width: 589px) and (max-width: 899px) {
+    @media screen and (min-width: 513px) and (max-width: 899px) {
         @content;
     }
 }
