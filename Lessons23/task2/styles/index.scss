@@ -14,9 +14,9 @@ body {
 .square {
     width: 100px;
     height: 100px;
-    margin: 8px;
-    @include for-extra {
-        margin: 16px;
+    margin: 16px;
+    @include landscape {
+        margin: 8px;
     }
     @include for-extra-small {
         background-color: #ff7f50;
