@@ -41,17 +41,20 @@ nav {
 }
 
 .submenu {
-  display: none;
   position: absolute;
   top: 3em;
   left: 8px;
-  margin: 0;
+  margin: 0px;
   padding: 0;
   background-color: #ff7f50;
   box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
   color: #fff;
   min-width: 120px;
   z-index: 1;
+}
+.submenu .submenu__item {
+  display: flex;
+  margin: 8px;
 }
 .submenu__item {
   padding: 0 8px;
