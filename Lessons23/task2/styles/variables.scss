@@ -37,3 +37,9 @@ $suplg: 1200;
         @content;
     }
 }
+
+@mixin landscape {
+    @media screen and (orientation: landscape) {
+        @content;
+    }
+}

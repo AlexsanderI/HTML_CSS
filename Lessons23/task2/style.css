@@ -40,19 +40,7 @@ body {
   }
 }
 
-@media screen and (min-width: 513px) and (max-width: 899px) {
-  .container {
-    display: flex;
-    flex-direction: row;
-  }
-}
-@media screen and (min-width: 900px) and (max-width: 1199px) {
-  .container {
-    display: flex;
-    flex-direction: row;
-  }
-}
-@media screen and (min-width: 1199px) {
+@media screen and (orientation: landscape) {
   .container {
     display: flex;
     flex-direction: row;

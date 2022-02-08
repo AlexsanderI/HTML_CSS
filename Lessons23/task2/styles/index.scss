@@ -32,16 +32,22 @@ body {
     }
 }
 
+// .container {
+//     @include for-medium {
+//         display: flex;
+//         flex-direction: row;
+//     }
+//     @include for-large-up {
+//         display: flex;
+//         flex-direction: row;
+//     }
+//     @include for-large-more {
+//         display: flex;
+//         flex-direction: row;
+//     }
+// }
 .container {
-    @include for-medium {
-        display: flex;
-        flex-direction: row;
-    }
-    @include for-large-up {
-        display: flex;
-        flex-direction: row;
-    }
-    @include for-large-more {
+    @include landscape {
         display: flex;
         flex-direction: row;
     }
