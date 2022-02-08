@@ -34,12 +34,4 @@ html {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.nav-list {
-  padding: 0;
-  margin: 0;
-  display: flex;
-  list-style: none;
-  align-items: center;
-}
-
 /*# sourceMappingURL=style.css.map */
