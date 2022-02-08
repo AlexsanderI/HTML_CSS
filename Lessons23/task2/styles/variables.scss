@@ -2,8 +2,20 @@ $sm: 600px;
 $md: 900px;
 $lg: 1199px;
 $suplg: 1200;
+@mixin for-extra {
+    @media screen and (max-width: 589px) {
+        @content;
+    }
+}
+
 @mixin for-extra-small {
     @media screen and (max-width: 599px) {
+        @content;
+    }
+}
+
+@mixin for-medium {
+    @media screen and (min-width: 589px) and (max-width: 899px) {
         @content;
     }
 }

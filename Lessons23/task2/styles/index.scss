@@ -15,10 +15,11 @@ body {
     width: 100px;
     height: 100px;
     margin: 8px;
-    @include for-extra-small {
+    @include for-extra {
         margin: 16px;
+    }
+    @include for-extra-small {
         background-color: #ff7f50;
-        // flex-direction: row;
     }
     @include for-medium-up {
         background-color: #8a2be2;
@@ -32,7 +33,7 @@ body {
 }
 
 .container {
-    @include for-medium-up {
+    @include for-medium {
         display: flex;
         flex-direction: row;
     }
