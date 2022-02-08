@@ -15,7 +15,7 @@
     &__item {
         background-color: $color-secondary-color;
         padding: $unit;
-        margin-left: $unit * 2;
+        margin-left: $unit;
         // border-radius: 4px;
         border-radius: $border-radius;
         &_selected {
