@@ -1,0 +1,53 @@
+@import 'variables.scss';
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.products {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+}
+
+.navigation {
+    background-color: #ff7f58;
+    min-height: $min_size_blok;
+    flex: 1;
+    display: flex;
+}
+
+.products-list {
+    background-color: #006400;
+    display: flex;
+    min-height: $min_size_blok;
+    flex: 1;
+}
+
+.news {
+    background-color: #0ff;
+    display: flex;
+    min-height: $min_size_blok;
+    flex: 1;
+}
+
+span {
+    font-family: Verdana;
+    margin: auto;
+    background-color: $backroud-color-text;
+    padding: 8px;
+    border-radius: 4px;
+    text-transform: lowercase;
+}
+
+@include for-small-up {
+    .products {
+        flex-direction: row;
+    }
+}
+
+@include for-large-up {
+    .container {
+        flex-direction: row;
+    }
+}
