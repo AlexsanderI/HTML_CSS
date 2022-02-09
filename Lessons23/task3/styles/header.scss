@@ -4,12 +4,16 @@ header {
     color: #fff;
 }
 
-ul,
-li {
+.menu {
     list-style: none;
 }
 
-nav {
+.nav {
+    display: flex;
+    min-height: 3em;
+}
+
+.menu__item {
     display: flex;
     min-height: 3em;
 }
